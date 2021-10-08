@@ -193,43 +193,52 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
+  margin: 1rem 0;
   padding: 2rem 3rem;
+  text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  text-align: center;
 }
 
-.btn--accent {
-  background-color: var(--color-accent);
+.btn--primary {
+  background: var(--color-primary);
   color: #fff;
-  padding: 2rem 4rem;
 }
 
-.btn--accent:hover {
-  background-color: #f56a46;
+.btn--primary:hover {
+  background: #3a8ffd;
 }
 
 .btn--secondary {
-  background-color: var(--color-secondary);
-  color: white;
-}
-
-.btn--secondary:hover {
-  background-color: #00c8eb;
-}
-
-.btn--outline {
-  background-color: transparent;
-  border: 2px solid var(--color-heading);
-  color: var(--color-heading);
-}
-
-.btn--outline:hover {
-  background-color: var(--color-heading);
+  background: var(--color-secondary);
   color: #fff;
 }
 
-.btn-block {
+.btn--secondary:hover {
+  background: #05cdf0;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background: #ec3000;
+}
+
+.btn--outline {
+  background: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.btn--block {
   width: 100%;
   display: inline-block;
 }
@@ -469,5 +478,47 @@ a {
 
   .testimonial .quote {
     margin-left: 6rem;
+  }
+}
+
+/* Callouts */
+
+.callout {
+  border-radius: 5px;
+  padding: 4rem;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+.callout__heading {
+  margin-top: 0;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .btn {
+    justify-self: start;
+    margin-left: 3rem;
+  }
+
+  .grid-col-2 {
+    grid-template-columns: 1fr auto;
   }
 }
