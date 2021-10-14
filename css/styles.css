@@ -237,12 +237,12 @@ a {
 
 .btn--outline {
   background: #fff;
-  color: var(--color-headings);
-  border: 2px solid var(--color-headings);
+  color: var(--color-heading);
+  border: 2px solid var(--color-heading);
 }
 
 .btn--outline:hover {
-  background: var(--color-headings);
+  background: var(--color-heading);
   color: #fff;
 }
 
@@ -715,4 +715,27 @@ a {
   .block-domain__list {
     grid-template-columns: repeat(6, 1fr);
   }
+}
+
+/* Plans Block */
+
+.block-plan .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plan .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.block-plan .plan:hover {
+  transition: transform 0.3s linear;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.block-plan .plan:hover {
+  transform: scale(1.1);
 }
