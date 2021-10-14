@@ -219,6 +219,13 @@ a {
   background: #05cdf0;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 .btn--accent {
   background: var(--color-accent);
   color: #fff;
@@ -274,7 +281,7 @@ a {
 .input-group .input {
   flex-grow: 1;
   border: 0;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 3rem;
 }
 
 .input-group .btn {
@@ -682,5 +689,30 @@ a {
 
   .hero .grid-col-2 {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Block domain */
+
+.block-domain__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 6rem 6rem;
+  margin: 4rem auto;
+  font-weight: 600;
+  font-size: 2rem;
+  justify-items: center;
+  max-width: 800px;
+}
+
+.block-domain .input-group {
+  box-shadow: 0 0 20px 30px #e6ebee;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__list {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
