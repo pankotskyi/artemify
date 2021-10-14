@@ -446,7 +446,7 @@ a {
   display: grid;
 }
 
-@media screen and (min-width: 764px) {
+@media screen and (min-width: 768px) {
   .grid-col-2 {
     grid-template-columns: 1fr 1fr;
   }
@@ -527,7 +527,7 @@ a {
   }
 
   .grid-col-2 {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -738,4 +738,23 @@ a {
 
 .block-plan .plan:hover {
   transform: scale(1.1);
+}
+
+/* Features Block */
+
+.feature {
+  gap: 7rem 5rem;
+  margin: 12rem;
+  margin-top: 4rem;
+}
+
+.feature__image {
+  width: 100%;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
