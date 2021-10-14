@@ -31,6 +31,7 @@ h2,
 h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -583,8 +584,14 @@ a {
   padding-bottom: 10rem;
 }
 
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  padding-bottom: 10rem;
+}
+
 .container {
   max-width: 1140px;
+  margin: 0 auto;
 }
 
 /* Navbar */
@@ -643,5 +650,37 @@ a {
 
   .nav__item {
     border: 0;
+  }
+}
+
+/* Hero */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+
+  .hero .grid-col-2 {
+    grid-template-columns: 1fr 1fr;
   }
 }
