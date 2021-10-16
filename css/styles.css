@@ -195,7 +195,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -282,6 +282,7 @@ a {
   flex-grow: 1;
   border: 0;
   padding: 1.5rem 3rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -700,7 +701,7 @@ a {
 
 .block-domain__list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 6rem 6rem;
   margin: 4rem auto;
   font-weight: 600;
@@ -782,6 +783,7 @@ a {
 
 .footer__block {
   background-color: #232323;
+  padding-bottom: 0;
 }
 
 .footer {
