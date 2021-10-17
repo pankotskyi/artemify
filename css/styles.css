@@ -756,7 +756,7 @@ a {
 
 .feature {
   gap: 7rem 5rem;
-  margin: 12rem;
+  margin: 12rem 0;
   margin-top: 4rem;
 }
 
